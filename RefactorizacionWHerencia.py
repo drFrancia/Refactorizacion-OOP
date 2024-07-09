@@ -146,9 +146,9 @@ def main():
         print("Mapa Actual: ")
         mapa.imprimir_mapa()
 
-        inicio = obtener_coordenadas_validadas(mapa, "punto de inicio (0, 4)")
-        fin = obtener_coordenadas_validadas(mapa, "punto de fin (0, 4)")
-
+        inicio = obtener_coordenadas_validadas(mapa, f"punto de inicio ({ancho - (ancho)}, {alto - 1})")
+        fin = obtener_coordenadas_validadas(mapa, f"punto de fin ({ancho - (ancho)}, {alto - 1})")
+        
         calculadora_rutas = CalculadoraRutas(mapa)
         calculadora_rutas.mostrar_ruta(inicio, fin)
 
